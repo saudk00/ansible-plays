@@ -1,0 +1,7 @@
+---
+- name: install apache and start/enable service. Also create index.html file
+  hosts: webservers
+  become: true
+  roles:
+    - install_apache
+    - copy_document_root
