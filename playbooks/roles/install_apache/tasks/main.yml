@@ -1,0 +1,6 @@
+---
+  - name: install httpd
+    package:
+      name: "{{ apache_package }}"
+      state: latest
+    notify: Start Apache
